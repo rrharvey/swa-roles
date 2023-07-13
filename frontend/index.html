@@ -41,6 +41,8 @@
         console.log(payload);
       }
 
+      makeItWork();
+
       async function getUserInfo() {
         const response = await fetch("/.auth/me");
         const user = await response.json();
