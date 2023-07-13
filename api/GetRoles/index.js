@@ -11,11 +11,11 @@ module.exports = async function (context, req) {
   const roles = [];
 
   for (const key in req.headers) {
-    context.info(`${key}=${req.headers[key]}`);
+    context.log(`${key}=${req.headers[key]}`);
   }
 
   for (const key in user) {
-    context.info(`user.${key}=${user[key]}`);
+    context.log(`user.${key}=${user[key]}`);
   }
 
   for (const [role, groupId] of Object.entries(roleGroupMappings)) {
