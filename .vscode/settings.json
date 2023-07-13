@@ -1,8 +1,10 @@
 {
-    "azureFunctions.deploySubpath": "api",
-    "azureFunctions.postDeployTask": "npm install (functions)",
-    "azureFunctions.projectLanguage": "JavaScript",
-    "azureFunctions.projectRuntime": "~4",
-    "debug.internalConsoleOptions": "neverOpen",
-    "azureFunctions.preDeployTask": "npm prune (functions)"
+  "azureFunctions.deploySubpath": "api",
+  "azureFunctions.postDeployTask": "npm install (functions)",
+  "azureFunctions.projectLanguage": "JavaScript",
+  "azureFunctions.projectRuntime": "~4",
+  "debug.internalConsoleOptions": "neverOpen",
+  "azureFunctions.preDeployTask": "npm prune (functions)",
+  "appService.defaultWebAppToDeploy": "/subscriptions/a5ca5d57-b85c-436a-8df2-7ae6f7aa3b94/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/rrharvey-training-api",
+  "appService.deploySubpath": "api"
 }
