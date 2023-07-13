@@ -24,6 +24,8 @@ module.exports = async function (context, req) {
     }
   }
 
+  context.log(`roles = ${JSON.stringify(roles)}`);
+
   context.res.json({
     roles,
   });
