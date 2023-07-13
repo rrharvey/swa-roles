@@ -45,9 +45,8 @@ async function isUserInGroup(groupId, bearerToken, context) {
   });
 
   if (response.status !== 200) {
+    context.log(`${response.status}: ${response.statusText}`);
     return false;
-  } else {
-    context.error(`${response.status}: ${response.statusText}`);
   }
 
   const graphResponse = await response.json();
